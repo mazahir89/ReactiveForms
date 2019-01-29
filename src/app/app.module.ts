@@ -42,6 +42,6 @@ import { AppRoutingModule } from './app-routing.module';
 
   ],
   providers: [],
-  bootstrap: [AppComponent, BasicFormComponent, NestedFormComponent, ArrayFormComponent]
+  bootstrap: [AppComponent, BasicFormComponent, NestedFormComponent, ArrayFormComponent, ValidFormComponent]
 })
 export class AppModule { }
