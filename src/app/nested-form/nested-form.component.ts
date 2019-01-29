@@ -1,3 +1,4 @@
+import { FormGroup, FormBuilder } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NestedFormComponent implements OnInit {
 
-  constructor() { }
+  formGroup: FormGroup;
+
+  constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit() {
+
+    const phone = this.formBuilder.group({
+      area: [],
+      prefix: [],
+      line: []
+    });
+
+    this.formGroup = this.formBuilder.group({
+      email: '',
+      homePhone: phone,
+      cellPhone: phone,
+    });
   }
+
 
 }

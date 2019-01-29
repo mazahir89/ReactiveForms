@@ -1,22 +1,33 @@
-<form [formGroup]="formGroup">
-
-  Value: {{ formGroup.value | json}}
+<div style="text-align:center">
 
   <hr>
 
-  <mat-form-field>
-    <input matInput placeholder="email" formControlName="email">
-  </mat-form-field>
+  <form [formGroup]="formGroup">
 
-  <mat-form-field>
-    <textarea matInput placeholder="your message..." formControlName="message"></textarea>
+    Value: {{ formGroup.value | json}}
 
-  </mat-form-field>
+    <hr>
+
+    <mat-form-field>
+      <input matInput placeholder="email" formControlName="email">
+    </mat-form-field>
+
+    <mat-form-field>
+      <textarea matInput placeholder="your message..." formControlName="message"></textarea>
+
+    </mat-form-field>
 
 
-  <mat-form-field>
-    <mat-select formControlName="career" placeholder="career">
+    <mat-form-field>
+      <mat-select formControlName="career" placeholder="career">
 
-    </mat-select>
-  </mat-form-field>
-</form>
+      </mat-select>
+    </mat-form-field>
+  </form>
+
+</div>
+
+<div>
+
+
+</div>

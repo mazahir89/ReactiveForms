@@ -17,6 +17,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatChipsModule } from '@angular/material/chips';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -36,10 +37,11 @@ import { MatChipsModule } from '@angular/material/chips';
     MatButtonModule,
     MatSelectModule,
     MatCheckboxModule,
-    MatChipsModule
+    MatChipsModule,
+    AppRoutingModule
 
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, BasicFormComponent, NestedFormComponent]
 })
 export class AppModule { }
