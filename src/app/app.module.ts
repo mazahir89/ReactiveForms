@@ -7,7 +7,6 @@ import { BasicFormComponent } from './basic-form/basic-form.component';
 import { NestedFormComponent } from './nested-form/nested-form.component';
 import { ArrayFormComponent } from './array-form/array-form.component';
 import { ValidFormComponent } from './valid-form/valid-form.component';
-import { SubmitFormComponent } from './submit-form/submit-form.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -26,8 +25,7 @@ import { AppRoutingModule } from './app-routing.module';
     BasicFormComponent,
     NestedFormComponent,
     ArrayFormComponent,
-    ValidFormComponent,
-    SubmitFormComponent
+    ValidFormComponent
   ],
   imports: [
     BrowserModule,
