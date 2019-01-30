@@ -62,7 +62,7 @@
         Age {{ age.errors.max.actual }} is too old to use this app!
       </mat-error>
 
-      <mat-error *ngIf="age.errors.pattern && age.touched">
+      <mat-error *ngIf="age.errors?.pattern && age.touched">
         Age can not cointain text!
 
 
